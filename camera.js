@@ -27,7 +27,7 @@ function capturePhoto() {
     const imageData = canvas.toDataURL('image/png');
     const link = document.createElement('a');
     link.href = imageData;
-    link.download = 'photo.png';
+    link.download = `photo_${Date.now()}_${Math.floor(Math.random() * 1000)}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
