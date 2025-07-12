@@ -23,9 +23,14 @@ function capturePhoto() {
     canvas.height = video.videoHeight;
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
     
-    // 可以在这里添加保存或处理照片的逻辑
+    // 下载照片
     const imageData = canvas.toDataURL('image/png');
-    console.log('照片数据:', imageData);
+    const link = document.createElement('a');
+    link.href = imageData;
+    link.download = 'photo.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 // 事件监听
