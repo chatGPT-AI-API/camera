@@ -1,0 +1,25 @@
+{
+  "name": "camera-app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^37.2.3"
+  },
+  "version": "1.0.0",
+  "description": "这是一个基于Electron框架的桌面相机应用，支持拍照、保存照片和实时滤镜功能。",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatGPT-AI-API/camera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chatGPT-AI-API/camera/issues"
+  },
+  "homepage": "https://github.com/chatGPT-AI-API/camera#readme"
+}
